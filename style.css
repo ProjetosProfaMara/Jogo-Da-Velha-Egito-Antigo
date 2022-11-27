@@ -1,0 +1,203 @@
+/* Variáveis */
+:root {
+  --branco: white ;
+  --blue: #2980b9];
+  --blue-dark: #56688C;
+  --red-ligth:  #e74c3c ;
+  --red: #c0392b;
+  --cinza-dark: #a29bfe;
+  --branco: #ecf0f1;
+  --pink: #F2C335;
+}
+ #icone{
+  height: 100px;
+  position: absolute;
+  margin: 0 auto;
+  top: 75px;
+  right: 620px;
+vertical-align: top;
+display: inline-block;
+
+
+ }
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #56688C;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 0 auto;
+  top: 500px;
+  height: 40px;
+  width: 7%;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+   justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #F2C335;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #757576;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #757576;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+h2{
+  /*position: absolute;*/
+  /*top: 90px;
+  right: 835px;*/
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+font-family: arial;
+font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+/* Fonte */
+.font-size-25 {font-size: 25px}
+
+/* Colors */
+.color-blue-ligth{color: var(--branco)}
+.color-red-ligth{color: var(--red-ligth)}
+
+/* BGs */
+body{
+  padding: 2vh;
+  background-position: center;
+  background: url(img/fundo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: arial;
+}
+
+.bg-red {background: var(--red)}
+.bg-blue {background: var(--blue)}
+.bg-blue-dark {background: var(--blue-dark)}
+.bg-branco{background:#FDFCEC;}
+
+
+/* Classes aux */
+.marcar-vez { 
+  border: 5px solid var(--pink); 
+  color: var(--pink);
+}
+.z-index-100 {
+  z-index: 100;
+  margin-left: -310px;
+}
+.rodada {
+  background: var(--pink);
+  color: var(--branco);
+  border-radius: 50px;
+}
+.jogo {
+
+  position: absolute;
+  /*top: 100px;*/
+  border-radius: 26px;
+  padding: 14px;
+  -webkit-box-shadow: 0px 6px 8px -4px rgba(0,0,0,0.37);
+  -moz-box-shadow: 0px 6px 8px -4px rgba(0,0,0,0.37);
+  box-shadow: 0px 6px 8px -4px rgba(0,0,0,0.37);
+
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.width-100{width: 100px;}
+
+/* Style table */
+.table-hash{
+  width: 80%;
+  margin-left: 10%;
+  padding: 1%;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-hash tr:nth-child(1) > td:nth-child(1), tr:nth-child(1) > td:nth-child(2) {
+  border-color: var(--blue-dark);
+  border-right-style: solid; 
+  border-bottom-style: solid; 
+  border-top-style: none;
+}
+.table-hash tr:nth-child(1) > td:nth-child(3) {
+  border-color: var(--blue-dark);
+  border-bottom-style: solid; 
+  border-top-style: none;
+}
+.table-hash tr:nth-child(2) > td:nth-child(1), tr:nth-child(2) > td:nth-child(2) {
+  border-color: var(--blue-dark);
+  border-right-style: solid; 
+  border-bottom-style: solid; 
+}
+.table-hash tr:nth-child(2) > td:nth-child(3) {
+  border-color: var(--blue-dark);
+  border-bottom-style: solid;
+}
+.table-hash tr:nth-child(3) > td:nth-child(1), tr:nth-child(3) > td:nth-child(2) {
+  border-color: var(--blue-dark);
+  border-right-style: solid
+}
+.table-hash tr > td {
+  height: 100px; 
+  cursor: pointer; 
+  text-align: center; 
+  vertical-align: middle !important; 
+  max-width: 26px;
+}
+.table-hash tr > td {
+  font-size: 37px;
+  font-weight: 600;
+}
+.table-hash td[marcado="true"]{cursor:default}
+
+.button-voltar {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+
+}
